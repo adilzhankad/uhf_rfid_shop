@@ -31,22 +31,32 @@ def future(request):
 
 
 kod=0
-
+data =[]
 def registery(request):
     if request.method == 'POST':
         no = None
-        
+        global data
         global kod
         test = request.POST.get('name')
         print(str(test))
+
+
+
         if str(test) != "None":
             name=request.POST.get('name')
             email=request.POST.get('email')
             ps1=request.POST.get('ps1')
             ps1=request.POST.get('ps2')
             print("test",name)
+            data.append(name)
+            data.append(email)
+            data.append(ps1)
+
+
 
         kodemail = request.POST.get('kodemail')
+
+
         if(len(request.POST) >= 4):
             print(email)
             kod = sendemail(email)
@@ -57,10 +67,15 @@ def registery(request):
             print('ke',kodemail,kod)
             if str(kod) == str(kodemail):
                 print("yehooo")
+
+                name=data[0]
+                email=data[1]
+                ps1=data[2]
+
                 print(name,email,ps1)
 
 
-                db = sqlite3.connect("basetest.db")
+                db = sqlite3.connect("db.sqlite3")
                 sql = db.cursor()
 
                 sql.execute("""CREATE TABLE IF NOT EXISTS users (
@@ -80,9 +95,9 @@ def registery(request):
 
                 for value in sql.execute("SELECT * FROM users"):
                     print(value)
-
-                else:
-                    print("NOOOOOOOOOO:(")
+                data = [] 
+            else:
+                print("NOOOOOOOOOO:(")
                         
 
     return render(request,'main/registery.html')
@@ -126,7 +141,7 @@ def index(request):
         basetxt2.append(basetxt[i][1:-1].split(","))
         print(basetxt)
         datanow.append(basetxt2[i][-1].replace("#"," "))
-        sumatxt = "Summa: " + basetxt2[i][-2] + "tg"
+        sumatxt = "Total: " + basetxt2[i][-2] + "tg"
         suma.append(sumatxt)
         basetxt2[i] = basetxt2[i][0:-2]
     
