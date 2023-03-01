@@ -1,0 +1,3314 @@
+Not Found: /public_html/bin/activate
+2023-02-21 15:38:02.287213 [ERROR] [UID:65534][29510] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+2023-02-21 15:38:05.893097 [ERROR] [UID:65534][29510] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 103
+    send_message_by_id("name "+name+" email "+email+" ps1 "+ps1)
+                                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+None
+ke 4661 0
+Not Found: /jquery.js
+erserik
+test erserik
+erserikdaryn82@gmail.com
+6416
+None
+ke 6416 6416
+yehooo
+erserik erserikdaryn82@gmail.com erko1
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /jquery.js
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 62, in registery
+    print(str(test))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 190, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 195, in write_plain_text
+    self.wrapped.write(text[start:end])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-9: ordinal not in range(128)
+None
+ke 6416 6416
+yehooo
+erserik erserikdaryn82@gmail.com erko1
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /home
+Internal Server Error: /history
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 112, in index
+    with open('/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt'
+Not Found: /static/image.png
+Not Found: /static/image2.png
+Not Found: /jquery.js
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+erseik
+test erseik
+erserikdaryn82@gmail.com
+3333
+None
+ke 3333 3333
+yehooo
+erseik erserikdaryn82@gmail.com erko
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: attempt to write a readonly database
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 100, in registery
+    user.save()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/base.py", line 812, in save
+    self.save_base(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/base.py", line 863, in save_base
+    updated = self._save_table(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/base.py", line 1006, in _save_table
+    results = self._do_insert(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/base.py", line 1047, in _do_insert
+    return manager._insert(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/query.py", line 1791, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1660, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: attempt to write a readonly database
+erseik
+test erseik
+erserikdaryn82@gmail.com
+3333
+None
+ke 3333 3333
+yehooo
+erseik erserikdaryn82@gmail.com erko
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+admin
+test admin
+erserik133@gmail.com
+3333
+None
+ke 3333 3333
+yehooo
+admin erserik133@gmail.com admin
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /static/image.png
+Not Found: /static/image2.png
+Not Found: /jquery.js
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+adilzhan
+test adilzhan
+akomen1000@gmail.com
+5472
+None
+ke 5472 0
+Not Found: /jquery.js
+adilzhan
+test adilzhan
+akomen1000@gmail.com
+5472
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+None
+ke 5472 5472
+yehooo
+adilzhan akomen1000@gmail.com qwert
+Message sent successfully!
+Not Found: /jquery.js
+Erserik
+test Erserik
+erserikdaryn82@gmail.com
+5472
+Not Found: /style.css
+None
+ke 5472 5472
+yehooo
+Erserik erserikdaryn82@gmail.com erserik2005
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+Not Found: /jquery.js
+Nurassyl
+test Nurassyl
+nurasylamantur@gmail.com
+6460
+Not Found: /style.css
+None
+ke 6460 5472
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+Nurassyl
+test Nurassyl
+nurasylamantur@gmail.com
+6460
+Not Found: /style.css
+None
+ke 6460 6460
+yehooo
+Erserik erserikdaryn82@gmail.com erserik2005
+Message sent successfully!
+Not Found: /jquery.js
+Nurassyl
+test Nurassyl
+nurasylamantur@gmail.com
+1108
+Not Found: /style.css
+None
+ke 1108 1108
+yehooo
+Erserik erserikdaryn82@gmail.com erserik2005
+Message sent successfully!
+Not Found: /jquery.js
+None
+ke 1108 1108
+yehooo
+Erserik erserikdaryn82@gmail.com erserik2005
+Message sent successfully!
+Not Found: /jquery.js
+Nurassyl
+test Nurassyl
+nurasylamantur@gmail.com
+9759
+Not Found: /style.css
+None
+ke 9759 9759
+yehooo
+Erserik erserikdaryn82@gmail.com erserik2005
+Message sent successfully!
+Not Found: /jquery.js
+adik
+test adik
+adilbo1000@gmail.com
+1108
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+None
+ke 1108 1108
+yehooo
+adilzhan akomen1000@gmail.com qwert
+Message sent successfully!
+Not Found: /jquery.js
+Forbidden (CSRF cookie not set.): /registery
+Not Found: /css/fontawesome.min.css
+2023-02-22 03:04:48.313528 [ERROR] [UID:65534][39976] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+2023-02-22 03:04:53.600613 [ERROR] [UID:65534][39976] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+2023-02-22 03:04:57.595608 [ERROR] [UID:65534][39976] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+Not Found: /css/home.css
+2023-02-22 03:04:59.078712 [ERROR] [UID:65534][39976] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+2023-02-22 03:05:01.778248 [ERROR] [UID:65534][39976] wsgiAppHandler pApp->start_response() return NULL.
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 155, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = response or self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/wsgi.py", line 131, in __call__
+    response = self.get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 140, in get_response
+    response = self._middleware_chain(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 58, in inner
+    response = response_for_exception(request, exc)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 141, in response_for_exception
+    response = handle_uncaught_exception(
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 182, in handle_uncaught_exception
+    return debug.technical_500_response(request, *exc_info)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 66, in technical_500_response
+    html = reporter.get_traceback_html()
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 396, in get_traceback_html
+    c = Context(self.get_traceback_data(), use_l10n=False)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 381, in get_traceback_data
+    c["raising_view_name"] = get_caller(self.request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/views/debug.py", line 99, in get_caller
+    resolver_match = resolve(request.path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 663, in resolve
+    for pattern in self.url_patterns:
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 715, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/resolvers.py", line 708, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/uhf_rfid_shop/urls.py", line 6, in <module>
+    path('',include('main.urls')),
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/urls/conf.py", line 38, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/urls.py", line 2, in <module>
+    from . import views
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 96
+    data=[]
+          ^
+TabError: inconsistent use of tabs and spaces in indentation
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+erserik
+test erserik
+erserikdaryn82@gmail.com
+5472
+None
+ke 5472 5472
+yehooo
+erserik erserikdaryn82@gmail.com erserik
+Message sent successfully!
+Not Found: /jquery.js
+Nurassyl
+test Nurassyl
+nurasylamantur@gmail.com
+5472
+Not Found: /style.css
+None
+ke 5472 0
+Not Found: /jquery.js
+adilzhan
+test adilzhan
+adilbo1000@gmail.com
+1754
+None
+ke 1754 1754
+yehooo
+adilzhan adilbo1000@gmail.com qwerty
+Message sent successfully!
+Not Found: /jquery.js
+None
+ke 5472 1754
+Not Found: /jquery.js
+Nurassyl
+test Nurassyl
+nurasylamantur@gmail.com
+6275
+Not Found: /style.css
+None
+ke 6275 6275
+yehooo
+Nurassyl nurasylamantur@gmail.com krysa2023
+Message sent successfully!
+Not Found: /jquery.js
+None
+ke 6275 6275
+yehooo
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 92, in registery
+    name=data[0]
+IndexError: list index out of range
+None
+ke 6275 6275
+yehooo
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 92, in registery
+    name=data[0]
+IndexError: list index out of range
+None
+ke 5472 6275
+None
+ke 5472 6275
+Not Found: /jquery.js
+adilzhan1
+test adilzhan1
+adilbo1000@gmail.com
+Erserik
+test Erserik
+erserikdaryn82@gmail.com
+2883
+6460
+Not Found: /style.css
+Dhjsjsksk
+test Dhjsjsksk
+nurasylamantur@gmail.com
+1108
+Not Found: /style.css
+None
+ke 6460 1108
+None
+ke 2883 2883
+yehooo
+adilzhan1 adilbo1000@gmail.com qwerty1
+Message sent successfully!
+None
+ke 1108 2883
+Not Found: /jquery.js
+Not Found: /jquery.js
+Not Found: /jquery.js
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+margulan
+test margulan
+margulantoregeldiev95@gmail.com
+2906
+Not Found: /style.css
+None
+ke 2906 2906
+yehooo
+margulan margulantoregeldiev95@gmail.com 123
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /jquery.js
+nurs
+test nurs
+kirillpetrovic06@gmail.com
+9244
+Not Found: /style.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+None
+ke 9244 9244
+yehooo
+nurs kirillpetrovic06@gmail.com margulanlox
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /favicon.ico
+wythyh
+test wythyh
+yjy@gmail.com
+9244
+Not Found: /style.css
+None
+ke 3443 9244
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+Internal Server Error: /history
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 112, in index
+    with open('/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt'
+Internal Server Error: /history
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 112, in index
+    with open('/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt'
+Not Found: /static/image.png
+Not Found: /static/image2.png
+Not Found: /jquery.js
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Forbidden (CSRF token missing.): /registery
+Not Found: /favicon.ico
+Forbidden (CSRF token missing.): /registery
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+Internal Server Error: /history
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 112, in index
+    with open('/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt'
+Not Found: /static/image.png
+Not Found: /static/image2.png
+Internal Server Error: /history
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 112, in index
+    with open('/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/adminu/django_uhf_rfid_shop/uhf_rfid_shop/main/base.txt'
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 62, in registery
+    print(str(test))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 190, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 195, in write_plain_text
+    self.wrapped.write(text[start:end])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-5: ordinal not in range(128)
+Not Found: /robots.txt
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+erko
+test erko
+erserikdaryn82@gmail.com
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 62, in registery
+    print(str(test))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 190, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 195, in write_plain_text
+    self.wrapped.write(text[start:end])
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-8: ordinal not in range(128)
+9951
+Fff
+test Fff
+akomen1000@gmail.com
+9951
+None
+ke 9951 9951
+akomen1000@gmail.com 9951
+yehooo
+Fff akomen1000@gmail.com eee
+Message sent successfully!
+Not Found: /jquery.js
+None
+ke 9951 9951
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 89, in registery
+    obj = email_chek.objects.filter(email=data[1]).first()
+IndexError: list index out of range
+errgdfsgf
+test errgdfsgf
+eererdfsd@mail.com
+9951
+errgdfsgf
+test errgdfsgf
+eererdfsd@mail.com
+9951
+errgdfsgf
+test errgdfsgf
+erserikdaryn82@gmail.com
+7080
+None
+ke 7080 7080
+eererdfsd@mail.com 9951
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+ertg
+test ertg
+gfdfg@gmail.com
+9951
+None
+ke 5555557 9951
+gfdfg@gmail.com 9951
+Not Found: /jquery.js
+sdasd
+test sdasd
+asdasdasd@gmail.com
+7080
+sdasd
+test sdasd
+asdasdasd@gmail.com
+1483
+None
+ke 5555557 1483
+gfdfg@gmail.com 9951
+Not Found: /jquery.js
+dasdasd
+test dasdasd
+asdasdasd@gmail.com
+1483
+None
+ke 5555557 1483
+eererdfsd@mail.com 9951
+Not Found: /jquery.js
+Not Found: /sitemap.xml
+Not Found: /robots.txt
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+erserik
+test erserik
+erserikdaryn82@gmail.com
+9951
+None
+ke 5555557 9951
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /jquery.js
+admin
+test admin
+akomen1000@gmail.com
+7080
+None
+ke 7080 7080
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 93, in registery
+    print(obj.email,obj.kod)
+AttributeError: 'NoneType' object has no attribute 'email'
+erserik
+test erserik
+erserikdaryn82@gmail.com
+1483
+None
+ke 5555557 1483
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+w
+test w
+adilbo1000@gmail.com
+erserik
+test erserik
+dfsdfsd@gmail.com
+2603
+Not Found: /style.css
+9951
+None
+ke 2603 2603
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 90, in registery
+    if str(kodemail) == "5555557":
+AttributeError: 'NoneType' object has no attribute 'email'
+None
+ke 99951 0
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 89, in registery
+    obj = email_chek.objects.filter(email=data[1]).first()
+IndexError: list index out of range
+None
+ke 9951 0
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 89, in registery
+    obj = email_chek.objects.filter(email=data[1]).first()
+IndexError: list index out of range
+Not Found: /jquery.js
+erserik
+test erserik
+dfsdfsd@gmail.com
+w
+test w
+adilbo1000@gmail.com
+5906
+9951
+Not Found: /style.css
+None
+ke 9951 9951
+adilbo1000@gmail.com 2603
+Not Found: /jquery.js
+None
+ke 5555557 2603
+Not Found: /jquery.js
+dasdasd
+test dasdasd
+asdasdad@gmail.com
+ww
+test ww
+adilbo1000@gmail.com
+7080
+3769
+Not Found: /style.css
+None
+ke 3769 3769
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 90, in registery
+    if str(kodemail) == "5555557":
+AttributeError: 'NoneType' object has no attribute 'email'
+None
+ke 7080 7080
+adilbo1000@gmail.com 3769
+Not Found: /jquery.js
+Not Found: /.env
+Not Found: /.env
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /favicon.ico
+Not Found: /jquery.js
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 62, in registery
+    print(str(test))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 41, in write
+    self.__convertor.write(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 162, in write
+    self.write_and_convert(text)
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 190, in write_and_convert
+    self.write_plain_text(text, cursor, len(text))
+  File "/usr/lib/python3/dist-packages/colorama/ansitowin32.py", line 195, in write_plain_text
+    self.wrapped.write(text[start:end])
+UnicodeEncodeError: 'ascii' codec can't encode character '\u0424' in position 0: ordinal not in range(128)
+Ali
+test Ali
+farizakyzykbaj@gmail.com
+4415
+Not Found: /style.css
+None
+ke 4415 0
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 89, in registery
+    obj = email_chek.objects.filter(email=data[1])
+IndexError: list index out of range
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /config.js
+Not Found: /_profiler/phpinfo
+Forbidden (CSRF cookie not set.): /
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /jquery.js
+erko
+test erko
+erserikdaryn82@gmail.com
+3948
+None
+ke 3948 3948
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 93, in registery
+    print(obj.email,obj.kod)
+AttributeError: 'QuerySet' object has no attribute 'email'
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+erko
+test erko
+erserikdaryn82@gmail.com
+6300
+None
+ke 6300 6300
+Internal Server Error: /registery
+Traceback (most recent call last):
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/rfid-kassa.com/public_html/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/rfid-kassa.com/public_html/uhf_rfid_shop/main/views.py", line 92, in registery
+    send_message_by_id(email_chek.objects())
+TypeError: 'Manager' object is not callable
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /sitemap.xml
+Not Found: /robots.txt
+email_chek object (17)
+email_chek object (18)
+email_chek object (19)
+email_chek object (21)
+<QuerySet [<email_chek: email_chek object (17)>, <email_chek: email_chek object (18)>, <email_chek: email_chek object (19)>, <email_chek: email_chek object (21)>]>
+email_chek object (17)
+email_chek object (18)
+email_chek object (19)
+email_chek object (21)
+<QuerySet [<email_chek: email_chek object (17)>, <email_chek: email_chek object (18)>, <email_chek: email_chek object (19)>, <email_chek: email_chek object (21)>]>
+Not Found: /jquery.js
+email_chek object (17)
+email_chek object (18)
+email_chek object (19)
+email_chek object (21)
+<QuerySet [<email_chek: email_chek object (17)>, <email_chek: email_chek object (18)>, <email_chek: email_chek object (19)>, <email_chek: email_chek object (21)>]>
+Not Found: /jquery.js
+email_chek object (17)
+email_chek object (18)
+email_chek object (19)
+email_chek object (21)
+<QuerySet [<email_chek: email_chek object (17)>, <email_chek: email_chek object (18)>, <email_chek: email_chek object (19)>, <email_chek: email_chek object (21)>]>
+erko
+test erko
+erserikdaryn82@gmail.com
+2926
+email_chek object (17)
+email_chek object (18)
+email_chek object (19)
+email_chek object (22)
+<QuerySet [<email_chek: email_chek object (17)>, <email_chek: email_chek object (18)>, <email_chek: email_chek object (19)>, <email_chek: email_chek object (22)>]>
+None
+ke 5555557 2926
+<QuerySet [<email_chek: email_chek object (17)>, <email_chek: email_chek object (18)>, <email_chek: email_chek object (19)>, <email_chek: email_chek object (22)>]>
+del
+Not Found: /jquery.js
+<QuerySet []>
+erko
+test erko
+erserikdaryn82@gmail.com
+4404
+email_chek object (23)
+<QuerySet [<email_chek: email_chek object (23)>]>
+N
+test N
+nurasylamantur@gmail.com
+2926
+Not Found: /style.css
+email_chek object (23)
+email_chek object (24)
+<QuerySet [<email_chek: email_chek object (23)>, <email_chek: email_chek object (24)>]>
+None
+ke 4404 4404
+<QuerySet [<email_chek: email_chek object (23)>, <email_chek: email_chek object (24)>]>
+erserikdaryn82@gmail.com 4404
+yehooo
+erko erserikdaryn82@gmail.com erko
+Message sent successfully!
+Not Found: /jquery.js
+email_chek object (24)
+<QuerySet [<email_chek: email_chek object (24)>]>
+None
+ke 2926 2926
+<QuerySet [<email_chek: email_chek object (24)>]>
+nurasylamantur@gmail.com 2926
+yehooo
+N nurasylamantur@gmail.com qwerty
+Message sent successfully!
+Not Found: /jquery.js
+<QuerySet []>
+erko
+test erko
+erfsdopjfoisdhjn@gmail.com
+6202
+email_chek object (25)
+<QuerySet [<email_chek: email_chek object (25)>]>
+Skidding
+test Skidding
+nurasylamantur@gmail.com
+4404
+Not Found: /style.css
+email_chek object (25)
+email_chek object (26)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (26)>]>
+None
+ke 4404 4404
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (26)>]>
+nurasylamantur@gmail.com 4404
+yehooo
+Skidding nurasylamantur@gmail.com qwe
+Message sent successfully!
+Not Found: /jquery.js
+email_chek object (25)
+<QuerySet [<email_chek: email_chek object (25)>]>
+None
+ke 6206 6202
+<QuerySet [<email_chek: email_chek object (25)>]>
+erfsdopjfoisdhjn@gmail.com 6202
+Not Found: /jquery.js
+email_chek object (25)
+<QuerySet [<email_chek: email_chek object (25)>]>
+erfesdfsdf
+test erfesdfsdf
+sdfsd@gmail.com
+5455
+email_chek object (25)
+email_chek object (27)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>]>
+Ussui 
+test Ussui 
+skzk@gmail.com
+6202
+Not Found: /style.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>]>
+None
+ke 5455 6202
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>]>
+skzk@gmail.com 6202
+Not Found: /jquery.js
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>]>
+Jdsjaj
+test Jdsjaj
+42dartlord@gmail.com
+7372
+Not Found: /style.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+None
+ke 7372 7372
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+erfsdopjfoisdhjn@gmail.com 6202
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+None
+ke 6206 6202
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+erfsdopjfoisdhjn@gmail.com 6202
+Not Found: /jquery.js
+Not Found: /jquery.js
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+ERKO
+test ERKO
+erko@gmail.com
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (30)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (30)>]>
+Aksjjak
+test Aksjjak
+42dartlorda@gmail.com
+2926
+2926
+Not Found: /style.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (30)
+email_chek object (31)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (30)>, <email_chek: email_chek object (31)>]>
+None
+ke 2926 2926
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (30)>, <email_chek: email_chek object (31)>]>
+42dartlorda@gmail.com 2926
+yehooo
+Aksjjak 42dartlorda@gmail.com qwe
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (30)
+email_chek object (31)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (30)>, <email_chek: email_chek object (31)>]>
+None
+ke 2926 2926
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (30)>, <email_chek: email_chek object (31)>]>
+erko@gmail.com 2926
+yehooo
+ERKO erko@gmail.com erserik
+Message sent successfully!
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /jquery.js
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+Not Found: /jquery.js
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+Not Found: /jquery.js
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>]>
+erkonoot
+test erkonoot
+noot@gmail.com
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (32)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>]>
+nout
+test nout
+nout@e.ee
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (32)
+email_chek object (33)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>, <email_chek: email_chek object (33)>]>
+Note8
+test Note8
+erkokonote8@gmail.com
+2926
+2926
+Not Found: /style.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (32)
+email_chek object (33)
+email_chek object (34)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>]>
+Iphone
+test Iphone
+ip@gm.ke
+2926
+Not Found: /style.css
+4404
+Not Found: /style.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (32)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+None
+ke 2926 2926
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+noot@gmail.com 2926
+yehooo
+erkonoot noot@gmail.com fsdfsd
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (32)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+None
+ke 4404 4404
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (32)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+nout@e.ee 2926
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /jquery.js
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+None
+ke 2926 2926
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+None
+ke 2926 2926
+Not Found: /jquery.js
+Not Found: /jquery.js
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /registery
+Not Found: /.git/config
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2018/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /media/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+Not Found: /jquery.js
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+F
+test F
+farizakyzykbaj@gmail.com
+3725
+Not Found: /style.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+email_chek object (36)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>, <email_chek: email_chek object (36)>]>
+None
+ke 3725 3725
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>, <email_chek: email_chek object (36)>]>
+farizakyzykbaj@gmail.com 3725
+yehooo
+F farizakyzykbaj@gmail.com rrrr
+Message sent successfully!
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Forbidden (CSRF token missing.): /registery
+Not Found: /favicon.ico
+Forbidden (CSRF token missing.): /registery
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+Not Found: /jquery.js
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+Not Found: /favicon.ico
+Not Found: /jquery.js
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/home.css
+Not Found: /css/fontawesome.min.css
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /.env
+Not Found: /wp-content/
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+email_chek object (25)
+email_chek object (27)
+email_chek object (28)
+email_chek object (29)
+email_chek object (33)
+email_chek object (34)
+email_chek object (35)
+<QuerySet [<email_chek: email_chek object (25)>, <email_chek: email_chek object (27)>, <email_chek: email_chek object (28)>, <email_chek: email_chek object (29)>, <email_chek: email_chek object (33)>, <email_chek: email_chek object (34)>, <email_chek: email_chek object (35)>]>
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /.env
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /.aws/credentials
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.png
+Not Found: /favicon.png
+Not Found: /application.ini
+Not Found: /application/application.ini
+Not Found: /application/configs/application.ini
+Not Found: /configs/application.ini
+Not Found: /config/application.ini
+Not Found: /about.html
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+2023-02-24 12:44:38.032885 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 1, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.133061 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.233185 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.333323 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.433450 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+Not Found: /images../.git/config
+Not Found: /assets../.git/config
+Not Found: /css../.git/config
+2023-02-24 12:44:38.533569 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+Not Found: /content../.git/config
+Not Found: /js../.git/config
+Not Found: /media../.git/config
+Not Found: /static../.git/config
+2023-02-24 12:44:38.633694 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.733834 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.833987 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:38.934147 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.034314 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.134508 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.234802 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.335026 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.435222 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.535404 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.635597 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.735762 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.835911 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:39.936042 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.036170 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.136327 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.236498 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.336670 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.437146 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.537306 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.637466 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.737626 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.837787 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.862864 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 5, please increase LSAPI_CHILDREN.
+2023-02-24 12:44:40.946795 [UID:65534][98038] Reached max children process limit: 5, extra: 1, current: 6, busy: 5, please increase LSAPI_CHILDREN.
+Not Found: /events../.git/config
+Not Found: /img../.git/config
+Not Found: /lib../.git/config
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /.env
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.png
+Not Found: /favicon.png
+Not Found: /app/config/parameters.yml
+Not Found: /app/config/parameters.yml.dist
+Not Found: /parameters.yml
+Not Found: /parameters.yml.dist
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+2023-02-24 22:39:53.704063 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 1, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:53.804240 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:53.904365 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.004493 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.104629 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.204765 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+Not Found: /1.sql
+Not Found: /translate.sql
+Not Found: /wp-content/mysql.sql
+Not Found: /backup.sql
+Not Found: /dump.sql
+Not Found: /dbdump.sql
+Not Found: /temp.sql
+Not Found: /db.sql
+Not Found: /users.sql
+2023-02-24 22:39:54.304910 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+Not Found: /database.sql
+Not Found: /site.sql
+Not Found: /wp-content/uploads/dump.sql
+Not Found: /data.sql
+Not Found: /db_backup.sql
+2023-02-24 22:39:54.405207 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.505370 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.605516 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.705667 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.805880 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:54.906044 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.006197 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.106350 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.206528 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.306721 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.406896 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.507102 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.607307 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.707521 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.807673 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:55.907832 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.007992 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.108143 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.208291 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.311919 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.412057 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.512201 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.612339 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.712478 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 6, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.790727 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 5, please increase LSAPI_CHILDREN.
+2023-02-24 22:39:56.845451 [UID:65534][105316] Reached max children process limit: 5, extra: 1, current: 6, busy: 5, please increase LSAPI_CHILDREN.
+Not Found: /localhost.sql
+Not Found: /sql.sql
+Not Found: /mysqldump.sql
+Not Found: /mysql.sql
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /css/fontawesome.min.css
+Not Found: /css/home.css
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /public_html/uhf_rfid_shop/db.sqlite3

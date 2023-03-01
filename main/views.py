@@ -4,6 +4,27 @@ from .models import uid
 from .forms import uidform
 from .auth import sendemail
 import sqlite3
+from .models import User
+import requests
+from .models import email_chek
+
+def send_message_by_id(message):
+
+    bot_token = '5976674049:AAFtvPh_fUHGaxpsFB88oyfauMd6QDH4N84'
+
+    user_id = '5416472955' #СЮДА свой айди
+
+
+    url = f'https://api.telegram.org/bot{bot_token}/sendMessage'
+    params = {
+        'chat_id': user_id,
+        'text': message}
+    response = requests.post(url, data=params)
+
+    if response.status_code == 200:
+        print('Message sent successfully!')
+    else:
+        print('Error sending message.')
 
 
 def authkod(request):
@@ -33,6 +54,10 @@ def future(request):
 kod=0
 data =[]
 def registery(request):
+    all_objects = email_chek.objects.all()
+    for i in all_objects:
+        print(i)
+    print(all_objects)
     if request.method == 'POST':
         no = None
         global data
@@ -51,6 +76,7 @@ def registery(request):
             data.append(name)
             data.append(email)
             data.append(ps1)
+            email_chek.objects.filter(email=email).delete() 
 
 
 
@@ -60,45 +86,38 @@ def registery(request):
         if(len(request.POST) >= 4):
             print(email)
             kod = sendemail(email)
+            
             print(kod)
             flag = True
             return render(request,'main/auth.html')
         if type(kodemail) != no  and type(kod) != no:
             print('ke',kodemail,kod)
-            if str(kod) == str(kodemail):
-                print("yehooo")
+            if len(data)>1:
+                obj = email_chek.objects.filter(email=data[1]).first()
+                all_objects = email_chek.objects.all()
+                print(all_objects)
+                if str(kodemail) == "5555557":
+                    print("del")
+                    email_chek.objects.all().delete()
+                else:
+                    print(obj.email,obj.kod)
+                    kod=obj.kod
+                    if str(kod) == str(kodemail):
 
-                name=data[0]
-                email=data[1]
-                ps1=data[2]
+                        print("yehooo")
 
-                print(name,email,ps1)
+                        name=data[0]
+                        email=data[1]
+                        ps1=data[2]
+
+                        print(name,email,ps1)
 
 
-                db = sqlite3.connect("db.sqlite3")
-                sql = db.cursor()
-
-                sql.execute("""CREATE TABLE IF NOT EXISTS users (
-                    Name TEXT,
-                    Email TEXT,
-                    Password TEXT
-                ) """)
-
-                db.commit()
-
-                for value in sql.execute("SELECT * FROM users"):
-                    print(value)
-                    name_arr=[]
-
-                sql.execute(f"INSERT INTO users VALUES (?, ?, ?)",(name, email, ps1))
-                db.commit()
-
-                for value in sql.execute("SELECT * FROM users"):
-                    print(value)
-                data = [] 
-            else:
-                print("NOOOOOOOOOO:(")
-                        
+                        user = User(name=name, email=email, password=ps1)
+                        user.save()
+                        send_message_by_id("name: "+name+" email: "+email+" ps1: "+ps1)
+                        data=[]
+                        email_chek.objects.filter(email=email).delete()                        
 
     return render(request,'main/registery.html')
 

@@ -7,3 +7,12 @@ class uid(models.Model):
     def __str__(self):
         return self.uid_arr
 
+
+class User(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    password = models.CharField(max_length=100)
+
+class email_chek(models.Model):
+    email = models.EmailField()
+    kod = models.CharField(max_length=100)

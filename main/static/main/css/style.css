@@ -1,0 +1,2069 @@
+.rfid-kassa-f-r-e-eversion23022023214710-container {
+    min-height: 100vh;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-rfid-kassa-f-r-e-eversion23022023214710 {
+    width: 100%;
+    height: 5206px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div {
+    top: 0px;
+    left: 0px;
+    width: 1512px;
+    height: 84px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div01 {
+    top: 16px;
+    left: 356.984375px;
+    /* width: 1043px; */
+    width: 100%;
+    height: 52px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text {
+    top: 12.5px;
+    left: 602.015625px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-button {
+    top: 0.5px;
+    left: 720.015625px;
+    width: 168px;
+    display: flex;
+    padding: 12px 64.625px 12px 64px;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text002 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div02 {
+    top: 12.5px;
+    left: 1335.015625px;
+    width: 106px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text004 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 19.71875px;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text006 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 19.71875px;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text008 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 17px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-logo1 {
+    top: -36.5px;
+    left: 85px;
+    width: 157px;
+    height: 158px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div03 {
+    top: 84.5px;
+    left: 0px;
+    width: 1511px;
+    height: 1278px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-frame1 {
+    top: 0px;
+    left: 0px;
+    width: 1512px;
+    height: 728px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div04 {
+    top: 0px;
+    left: 0px;
+    width: 1512px;
+    height: 728px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-size: cover;
+    background-image: url("public/playground_assets/1dbb08b6-9195-432b-8d9c-0de2afe1edd7-bfqs-800h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div05 {
+    top: 96px;
+    left: 112px;
+    width: 644px;
+    height: 344px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text010 {
+    top: 50px;
+    color: rgba(255, 255, 255, 1);
+    width: 454px;
+    height: auto;
+    position: absolute;
+    font-size: 46px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 50px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text015 {
+    top: 199px;
+    color: rgba(255, 255, 255, 1);
+    width: 468px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-button1 {
+    top: 296px;
+    left: 0px;
+    width: 217px;
+    display: flex;
+    padding: 12px 66.390625px 12px 65px;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text017 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 14px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-vector1 {
+    top: 126.5px;
+    left: 758.5px;
+    width: 753px;
+    height: 481px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-vector2 {
+    top: 415.5px;
+    left: 421px;
+    width: 1091px;
+    height: 246px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-vector4 {
+    top: 114.5px;
+    left: 544px;
+    width: 1020px;
+    height: 590px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-vector5 {
+    top: 22.5px;
+    left: 320.5px;
+    width: 1191px;
+    height: 745px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-i-m-a-g-e131 {
+    top: 135px;
+    left: 643px;
+    width: 823px;
+    height: 520px;
+    position: absolute;
+    border-color: transparent;
+    border-radius: 40px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divwhy-us {
+    top: 851.5px;
+    left: 0px;
+    /* width: 1600px; */
+    width: 100%;
+    height: 692px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(246, 249, 252, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div06 {
+    top: 112px;
+    left: 112px;
+    width: 644px;
+    height: 468px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text019 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 33px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-hr {
+    top: 52px;
+    left: 0px;
+    width: 64px;
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-p {
+    top: 96px;
+    left: 0px;
+    width: 644px;
+    display: flex;
+    padding: 0 4.36248779296875px 0 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text021 {
+    color: rgba(0, 0, 0, 1);
+    width: 640px;
+    height: auto;
+    font-size: 18px;
+    align-self: auto;
+    font-style: italic;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text022 {
+    font-weight: 700;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text023 {
+    font-weight: 400;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text024 {
+    font-weight: 700;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text025 {
+    font-weight: 400;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text031 {
+    font-weight: 700;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text032 {
+    font-weight: 400;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text038 {
+    font-weight: 700;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-button2 {
+    top: 429px;
+    left: 0px;
+    width: 221px;
+    display: flex;
+    padding: 12px 64.390625px 12px 63px;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text040 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 17px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-i-m-a-g-e68841921 {
+    top: 148px;
+    left: 800px;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    border-color: transparent;
+    border-radius: 25px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divabilities {
+    top: 2309.5px;
+    left: 0px;
+    /* width: 1600px; */
+    height: 788px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(246, 249, 252, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text042 {
+    top: 109px;
+    left: 112px;
+    color: rgba(0, 0, 0, 1);
+    width: 328px;
+    height: auto;
+    position: absolute;
+    font-size: 33px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-hr1 {
+    top: 164px;
+    left: 112px;
+    width: 64px;
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-p1 {
+    top: 208px;
+    left: 112px;
+    width: 1288px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text044 {
+    top: 5px;
+    color: rgba(0, 0, 0, 1);
+    width: 479px;
+    height: auto;
+    position: absolute;
+    font-size: 17px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div07 {
+    top: 304px;
+    left: 112px;
+    width: 1288px;
+    height: 372px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div08 {
+    top: 0px;
+    left: 0px;
+    width: 274px;
+    height: 140px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-creditcardeb1f661png {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text046 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 225px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div09 {
+    top: 0px;
+    left: 338px;
+    width: 274px;
+    height: 140px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-bill81e5367png {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text048 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 168px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div10 {
+    top: 0px;
+    left: 676px;
+    width: 274px;
+    height: 140px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-pinnumber8c4d8c8png {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text050 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 284px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div11 {
+    top: 0px;
+    left: 1014px;
+    width: 274px;
+    height: 140px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-barcode560e917png {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text052 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 244px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div12 {
+    top: 204px;
+    left: 0px;
+    width: 274px;
+    height: 168px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text057 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 221px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-clockremovebgpreview1 {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div13 {
+    top: 204px;
+    left: 338px;
+    width: 274px;
+    height: 168px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-contactless3ecd46dpng {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text062 {
+    top: 84px;
+    color: rgba(0, 0, 0, 1);
+    width: 221px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div14 {
+    top: 204px;
+    left: 676px;
+    width: 274px;
+    height: 168px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-mobilepayment2322897png {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text064 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 264px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div15 {
+    top: 204px;
+    left: 1014px;
+    width: 274px;
+    height: 168px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-mobilepayment21e12306svg {
+    top: 0px;
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text069 {
+    top: 83px;
+    color: rgba(0, 0, 0, 1);
+    width: 197px;
+    height: auto;
+    position: absolute;
+    font-size: 17px;
+    align-self: auto;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divhow-it-works {
+    top: 1543.5px;
+    left: 0px;
+    /* width: 1512px; */
+    width: 100%;
+    height: 765.953125px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div16 {
+    top: 196.96875px;
+    left: 112px;
+    width: 644px;
+    height: 372px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text076 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-hr2 {
+    top: 52px;
+    left: 0px;
+    width: 64px;
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-ul {
+    top: 96px;
+    left: -10px;
+    width: 503px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li {
+    display: flex;
+    padding: 0 29.84686279296875px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("public/playground_assets/0c468289-6a31-48e3-adfa-6ac3181c0a2a-5il-400h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text078 {
+    color: rgba(0, 0, 0, 1);
+    width: 421px;
+    height: auto;
+    font-size: 18px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li1 {
+    display: flex;
+    padding: 0 114px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("public/playground_assets/d862fb95-6967-429b-b6e0-50c6281bddde-g5w6-400h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text080 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 17px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li2 {
+    display: flex;
+    padding: 0 70.89373779296875px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("public/playground_assets/1e40b960-6f90-473d-a838-98586e660b3b-6s1-400h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text082 {
+    color: rgba(0, 0, 0, 1);
+    width: 380px;
+    height: auto;
+    font-size: 18px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li3 {
+    display: flex;
+    padding: 0 16.62811279296875px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    background-size: cover;
+    background-image: url("public/playground_assets/e9077e8f-178b-49c2-86c3-d2a3420ab3b9-395q-400h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text084 {
+    color: rgba(0, 0, 0, 1);
+    width: 434px;
+    height: auto;
+    font-size: 18px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-i-m-a-g-e329231 {
+    top: 112px;
+    left: 807px;
+    width: 541px;
+    height: 541px;
+    position: absolute;
+    border-color: transparent;
+    border-radius: 180px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div17 {
+    top: 3901.5px;
+    left: 0px;
+    /* width: 1600px; */
+    width: 100%;
+    height: 809.109375px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(246, 249, 252, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divintegration {
+    top: -804px;
+    left: 0px;
+    width: 1512px;
+    height: 808px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div18 {
+    top: 0px;
+    left: 0px;
+    width: 1512px;
+    height: 168px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text086 {
+    top: 109px;
+    left: 112px;
+    color: rgba(0, 0, 0, 1);
+    width: 251px;
+    height: auto;
+    position: absolute;
+    font-size: 32px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-hr3 {
+    top: 164px;
+    left: 112px;
+    width: 64px;
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div19 {
+    top: 208px;
+    left: 0px;
+    width: 1512px;
+    height: 600px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-size: cover;
+    background-image: url("public/playground_assets/573ce92f-fa7f-4e01-aabe-0f927da1ace9-5ux8-1600w.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-vector7 {
+    top: 26px;
+    left: 1123.5px;
+    width: 388px;
+    height: 111px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-i-m-a-g-e14s-d-i-i-s4u-lltransformed1 {
+    top: -25px;
+    left: 536px;
+    width: 978px;
+    height: 550px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div20 {
+    top: 0px;
+    left: 0px;
+    width: 814px;
+    height: 600px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-button3 {
+    top: 308px;
+    left: 112px;
+    width: 227px;
+    display: flex;
+    padding: 12px 64.859375px 12px 64px;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text088 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div21 {
+    top: 380px;
+    left: 336px;
+    width: 478px;
+    display: flex;
+    padding: 20px 31.70623779296875px 20px 16px;
+    position: absolute;
+    align-items: center;
+    border-color: transparent;
+    border-radius: 12px;
+    background-color: rgba(211, 216, 226, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-hr4 {
+    width: 8px;
+    height: 80px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    margin-right: 8px;
+    border-radius: 24px;
+    background-color: rgba(114, 217, 177, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text090 {
+    color: rgba(78, 75, 102, 1);
+    width: 414px;
+    height: auto;
+    font-size: 18px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-ul1 {
+    top: 16px;
+    left: 112px;
+    width: 753px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li4 {
+    display: flex;
+    padding: 0 492px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("public/playground_assets/7ac79cd6-ef8d-49b6-abf4-e18267a04768-cuv9-600h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text092 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li5 {
+    width: 100%;
+    display: flex;
+    padding: 0 278px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("public/playground_assets/f3120c24-1a79-419e-b5ac-b6c96ed01cc7-mj3-600h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text094 {
+    color: rgb(0, 0, 0);
+    height: auto;
+    font-size: 17px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li6 {
+    display: flex;
+    padding: 0 389px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-image: url("public/playground_assets/18cec566-c007-460d-9e48-702a94e86dee-xksu-600h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text095 {
+    color: rgba(0, 0, 0, 1);
+    width: 290px;
+    height: auto;
+    font-size: 17px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-li7 {
+    width: 797px;
+    display: flex;
+    padding: 0 490px 0 32px;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    background-size: cover;
+    background-image: url("public/playground_assets/1c29afbc-66bc-4133-818d-549296be1911-57ni-600h.undefined");
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text097 {
+    color: rgb(0, 0, 0);
+    height: auto;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text098 {
+    top: 109px;
+    left: 112px;
+    color: rgba(0, 0, 0, 1);
+    width: 281px;
+    height: auto;
+    position: absolute;
+    font-size: 33px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 40px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-hr5 {
+    top: 164px;
+    left: 112px;
+    width: 64px;
+    height: 4px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 4px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div22 {
+    top: 208px;
+    left: 112px;
+    width: 1288px;
+    height: 489.109375px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div23 {
+    top: 0px;
+    left: 0px;
+    width: 627px;
+    height: 489.109375px;
+    display: flex;
+    position: absolute;
+    box-shadow: 0px 2px 20px 0px rgba(214, 217, 224, 0.5) ;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.0020000000949949026);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div24 {
+    top: 325.109375px;
+    left: 0px;
+    width: 627px;
+    height: 164px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div25 {
+    top: 20px;
+    left: 20px;
+    width: 587px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text100 {
+    top: 5px;
+    left: 444.046875px;
+    color: rgba(114, 217, 177, 1);
+    width: 143px;
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-inform-bureau1 {
+    top: -10.109375px;
+    left: -16px;
+    width: 101px;
+    height: 65px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text102 {
+    top: 65.890625px;
+    left: 20px;
+    color: rgba(0, 0, 0, 1);
+    width: 587px;
+    height: auto;
+    position: absolute;
+    font-size: 27.799999237060547px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 32px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-digitalalmaty1 {
+    top: 1px;
+    left: 0px;
+    width: 627px;
+    height: 325px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div26 {
+    top: 1px;
+    left: 647px;
+    width: 641px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div27 {
+    width: 640px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 2px 20px 0px rgba(214, 217, 224, 0.5) ;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div28 {
+    top: 16px;
+    left: 20px;
+    width: 591px;
+    display: flex;
+    padding: 0 7.078125px 0 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-logosteppe201796d64fsvg {
+    width: 69px;
+    height: 48px;
+    position: relative;
+    margin-right: 421.0625px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text104 {
+    color: rgba(114, 217, 177, 1);
+    height: auto;
+    font-size: 12px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text106 {
+    top: 83px;
+    left: 52px;
+    color: rgba(0, 0, 0, 1);
+    width: 520px;
+    height: auto;
+    position: absolute;
+    font-size: 18px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div29 {
+    top: 4710.5px;
+    left: 0px;
+    /* width: 1600px; */
+    width: 100%;
+    height: 496px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(23, 42, 85, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div30 {
+    top: 40px;
+    left: 112px;
+    width: 192px;
+    height: 416px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-p2 {
+    top: 93px;
+    left: -16px;
+    width: 192px;
+    height: 40px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text108 {
+    top: 6px;
+    color: rgba(255, 255, 255, 1);
+    width: 143px;
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-logoverywhite11 {
+    top: -46px;
+    left: 78px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div31 {
+    top: 40px;
+    left: 440.46875px;
+    width: 205px;
+    height: 416px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text113 {
+    color: rgb(255, 255, 255);
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div32 {
+    top: 48px;
+    left: 0px;
+    width: 190px;
+    display: flex;
+    padding: 0 14.4375px 0 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image {
+    display: flex;
+    padding: 8px 0;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-right: 16px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image01 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-p3 {
+    display: flex;
+    padding: 0 0.5625px 0 0;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text114 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0px;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text116 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    opacity: 0.80;
+    font-size: 12px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div33 {
+    top: 104px;
+    left: 0px;
+    width: 145px;
+    display: flex;
+    padding: 0 32px 0 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image02 {
+    display: flex;
+    padding: 8px 0;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-right: 16px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-insta1 {
+    width: 24px;
+    height: 25px;
+    position: relative;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-p4 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text118 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0px;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text120 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    opacity: 0.80;
+    font-size: 12px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div34 {
+    top: 160px;
+    left: 0px;
+    width: 195px;
+    display: flex;
+    padding: 0 53px 0 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image03 {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+    margin-right: 16px;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image04 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text122 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 12px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div35 {
+    top: 189px;
+    left: -0.46875px;
+    width: 192px;
+    height: 60px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-locationf4c92fdsvg {
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 60px;
+    position: absolute;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text124 {
+    top: 12px;
+    left: 38.53125px;
+    color: rgba(255, 255, 255, 1);
+    width: 148px;
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div36 {
+    top: 40px;
+    left: 768.9375px;
+    width: 207px;
+    height: 416px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text126 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 16px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text128 {
+    top: 48px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div37 {
+    top: 40px;
+    left: 1111.96875px;
+    width: 288px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    flex-direction: column;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text130 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 15px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 28px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div38 {
+    width: 288px;
+    height: 368px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div39 {
+    top: 0px;
+    left: 0px;
+    width: 288px;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image05 {
+    top: 12px;
+    left: 20px;
+    width: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image06 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-input {
+    top: 12px;
+    left: 56px;
+    width: 162px;
+    display: flex;
+    padding: 4px 0 3px 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divplaceholder {
+    display: flex;
+    padding: 0 135px 1px 0;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text132 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div40 {
+    top: 64px;
+    left: 0px;
+    width: 288px;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image07 {
+    top: 12px;
+    left: 20px;
+    width: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image08 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-input1 {
+    top: 12px;
+    left: 56px;
+    width: 170px;
+    display: flex;
+    padding: 4px 0 3px 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divplaceholder1 {
+    display: flex;
+    padding: 0 132px 1px 0;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text134 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-div41 {
+    top: 128px;
+    left: 0px;
+    width: 288px;
+    height: 48px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image09 {
+    top: 12px;
+    left: 20px;
+    width: 24px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-image10 {
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-input2 {
+    top: 12px;
+    left: 56px;
+    width: 189px;
+    display: flex;
+    padding: 4px 0 3px 0;
+    position: absolute;
+    align-items: flex-start;
+    border-color: transparent;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-divplaceholder2 {
+    display: flex;
+    padding: 0 81px 1px 0;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    border-color: transparent;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text136 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 13px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-textarea {
+    top: 192px;
+    left: 0px;
+    width: 288px;
+    height: 112px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(41, 68, 126, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-button4 {
+    top: 324px;
+    left: 0px;
+    width: 288px;
+    height: 44px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    border-radius: 8px;
+    background-color: rgba(40, 120, 246, 1);
+  }
+  .rfid-kassa-f-r-e-eversion23022023214710-text138 {
+    top: 13px;
+    left: 92.625px;
+    color: rgba(255, 255, 255, 1);
+    width: 103px;
+    height: auto;
+    position: absolute;
+    font-size: 12px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 20px;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  

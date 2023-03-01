@@ -2,6 +2,7 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 import random
+from .models import email_chek
 
 def sendemail(a):# Define email sender and receiver
     email_sender = 'rfid.kassa@gmail.com'
@@ -11,7 +12,8 @@ def sendemail(a):# Define email sender and receiver
     x = random.randint(1000,9999)
     # Set the subject and body of the email
 
-
+    data = email_chek(email=a, kod = x)
+    data.save()
     subject = str(x)
     body = "Nurasyl Krisa Diskord davey"
 
